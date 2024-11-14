@@ -21,6 +21,10 @@ h1 {
     text-align: center;
     border: 1px solid black;
     display: inline-block;
-    width: 15%;
-    height: 10em;
+    width: 85px;
+    height: 85px;
+}
+
+.estratto {
+    background-color: blueviolet;
 }

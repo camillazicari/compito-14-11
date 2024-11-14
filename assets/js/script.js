@@ -1,4 +1,6 @@
 const corpoTombola = document.getElementById('corpoTombola');
+const btnEstrazione = document.getElementById('estrazione');
+const estractNum = [];
 
 document.addEventListener('load', init());
 function init() {
@@ -12,3 +14,14 @@ function griglia() {
         corpoTombola.appendChild(numeri);
     }
 }
+
+btnEstrazione.addEventListener('click', function(){
+    let randomNumber = Math.floor(Math.random()*76);
+    estractNum.push(randomNumber);
+    const divGenerali = document.querySelectorAll('#corpoTombola div');
+    for (let i=0; i<divGenerali.length; i++) {
+        if (divGenerali[i].innerText == randomNumber) {
+            divGenerali[i].classList.add('estratto');
+        }
+    }
+})
