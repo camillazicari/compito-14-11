@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+#corpoTombola {
+    margin: 10px;
+}
+
+#corpoTombola div {
+    text-align: center;
+    border: 1px solid black;
+    display: inline-block;
+    width: 15%;
+    height: 10em;
+}
